@@ -1,0 +1,24 @@
+filebeat.inputs:
+  - type: filestream
+    paths:
+      - /logs/*.json
+    fields_under_root: true
+    fields:
+      environment: teszt
+    
+    parsers:
+      - ndjson:
+          keys_under_root: true
+          overwrite_keys: true
+          add_error_key: true
+          expand_keys: true    
+        
+   
+    processors:
+      - add_host_metadata: ~
+
+output.elasticsearch:
+  hosts: ["http://ip:port"]
+  username: "elastic"
+  password: ""
+  ssl.verification_mode: none   
