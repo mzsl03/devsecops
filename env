@@ -1,8 +1,8 @@
 # Password for the 'elastic' user (at least 6 characters)
-ELASTIC_PASSWORD=
+ELASTIC_PASSWORD=student
 
 # Password for the 'kibana_system' user (at least 6 characters)
-KIBANA_PASSWORD=
+KIBANA_PASSWORD=student
 
 # Version of Elastic products
 STACK_VERSION=9.1.5

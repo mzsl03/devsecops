@@ -1,4 +1,4 @@
-services:
+services: #!!!!!!!!!!!!! port 3000 setxkbmap hu name: devsecops password: password1234
   prometheus:
     image: prom/prometheus:latest
     container_name: prometheus

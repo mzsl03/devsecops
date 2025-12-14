@@ -1,7 +1,7 @@
 filebeat.inputs:
   - type: filestream
     paths:
-      - /logs/*.json
+      - /logs/*.json #      /var/log/app/*.json
     fields_under_root: true
     fields:
       environment: teszt
@@ -18,7 +18,7 @@ filebeat.inputs:
       - add_host_metadata: ~
 
 output.elasticsearch:
-  hosts: ["http://ip:port"]
+  hosts: ["GEP_A_IP:5044"] # !!!!!!!!!!!!!!!!!!!!!!!!!!!! Változtatás port 9200 GEP_A_IP:5044
   username: "elastic"
   password: ""
   ssl.verification_mode: none   

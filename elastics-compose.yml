@@ -1,4 +1,4 @@
-services:
+services: #  !!!!!!!!!!!!!!!!!!!!!!!!! port 5601 name: elastic password: kibana_system
   setup:
     image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
     volumes:
