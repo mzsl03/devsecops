@@ -20,5 +20,5 @@ filebeat.inputs:
 output.elasticsearch:
   hosts: ["GEP_A_IP:5044"] # !!!!!!!!!!!!!!!!!!!!!!!!!!!! Változtatás port 9200 GEP_A_IP:5044
   username: "elastic"
-  password: ""
+  password: "student"
   ssl.verification_mode: none   
